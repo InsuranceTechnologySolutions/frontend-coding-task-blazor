@@ -1,9 +1,7 @@
 # Frontend Coding Task
 
 ## Backstory
-One common problem in shipping is to fill an anchorage efficiently with as many vessels as possible. You will create a Single Page Application to manually solve this problem (*). The vessels should be placed in the anchorage using drag and drop. You will have access to an API which tells you what size the bin is (anchorage) and what items (vessels) to fill in. 
-
-<small>(*) Fun fact: This is called the binpack problem [Wikipedia](https://en.wikipedia.org/wiki/Bin_packing_problem). </small>
+One common problem in shipping is to fill an anchorage efficiently with as many vessels as possible. You will create a **Single Page Application** to manually solve this problem (*). The vessels should be placed in the anchorage using **drag and drop**. You will have access to an API which tells you what size the bin is (anchorage) and what items (vessels) to fill in. 
 
 ## Prerequisites
 
@@ -73,4 +71,6 @@ You are done. 🥳 Clicking the "Try again!" button issues a new request to the 
 
 Good luck! 🙂  If you have any questions, do not hesitate to contact us.
 
+
+<small>(*) Fun fact: This is called the binpack problem [Wikipedia](https://en.wikipedia.org/wiki/Bin_packing_problem). </small>
 
