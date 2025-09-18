@@ -1,6 +1,5 @@
 # Frontend Coding Task
 
-
 ## Backstory
 One common problem in shipping is to fill an anchorage efficiently with as many vessels as possible. You will create a Single Page Application to manually solve this ("binpack" problem [Wikipedia](https://en.wikipedia.org/wiki/Bin_packing_problem)). You will have access to an API which tells you what size the bin is (anchorage) and what items (vessels) to fill in it. 
 
@@ -42,15 +41,15 @@ $ curl -X GET https://esa.instech.no/api/fleets/random
 
 ### Suggested UI:
 
-![Wireframes](images/Wireframes_3.png)
+<img src="images/Wireframes_3.png" alt="Wireframes" width="600" />
 
 The json states that there are 2 vessels with size (6x5) and 5 vessels with size (3X12). These can be dragged (and dropped) into the anchorage area. 
 
-![Wireframes](images/Wireframes_1.png)
+<img src="images/Wireframes_1.png" alt="Wireframes" width="600" />
 
 4 vessels have been placed into the anchorage, 0 (6x5) vessels and 3 (3x12) vessels remaining. 
 
-![Wireframes](images/Wireframes_2.png)
+<img src="images/Wireframes_2.png" alt="Wireframes" width="600" />
 
 You are done. 🥳 Clicking the "Try again!" button issues a new request to the API. Based on the response, render a new anchorage and the vessels / items to fill it with. 
 
@@ -69,8 +68,6 @@ You are done. 🥳 Clicking the "Try again!" button issues a new request to the 
 - How do you do state management?
 - Apply CSS/Bootstraping to make the SPA look a bit nicer than the wireframes. 
 - Documentation - either in code or in a separate readme is highly appreciated. 
-
-
 
 Good luck! 🙂  If you have any questions, do not hesitate to contact us.
 
