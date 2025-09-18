@@ -55,7 +55,12 @@ The json states that there are 2 vessels with size (6x5) and 5 vessels with size
 You are done. 🥳 Clicking the "Try again!" button issues a new request to the API. Based on the response, render a new anchorage and the vessels / items to fill it with. 
 
 ### Additional information:
-It could be that the vessels must be possible to rotate 90 degrees to utilize all space in the anchorage. You decide how to do this from a UX perspective (double clicking the vessel maybe?). If this is not possible, leave it. Overlap between vessels is not possible 💥. It is ok if the full anchorage cannot be filled, but then you need to provide means to try again, perhaps always show that button? The state of the anchorage does not have to be persisted, page reload will be a new try. Any security concerns are out of scope (auth/CORS ++). You can use third party libraries / components. 
+- It could be that the vessels must be possible to rotate 90 degrees to utilize all space in the anchorage. You decide how to do this from a UX perspective (double clicking the vessel maybe?). If this is not possible, leave it. 
+- Overlap between vessels is not possible 💥 
+- It is ok if the full anchorage cannot be filled, but then you need to provide means to try again, perhaps always show that button? 
+- The state of the anchorage does not have to be persisted, page reload will be a new try. 
+- Any security concerns are out of scope (auth/CORS ++). 
+- You can use third party libraries / components. 
 
 ## What will we evaluate?
 - Apart from a functional SPA, we want you create a codebase which is "clean" (adhere to the SOLID principles). 
