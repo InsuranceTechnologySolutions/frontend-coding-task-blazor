@@ -11,7 +11,7 @@ One common problem in shipping is to fill an anchorage efficiently with as many 
 
 ## The Task
 
-Create a Blazor WASM or Server app which connects to the api at URL: [https://esa.instech.no/](https://esa.instech.no/).
+Create a Blazor WASM or Server app which connects to the api at URL: [https://esa.instech.no/](https://esa.instech.no/). Please note that the documentation page for this API contains a link to a separate readme which is not relevant for this Blazor FE task. 
 
 A request like this:
 ```sh
