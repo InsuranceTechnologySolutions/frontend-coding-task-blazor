@@ -68,6 +68,7 @@ You are done. 🥳 Clicking the "Try again!" button issues a new request to the 
 - How do you do state management?
 - Apply CSS/Bootstraping to make the SPA look a bit nicer than the wireframes. 
 - Documentation - either in code or in a separate readme is highly appreciated. 
+- We do not like AI/Agent generated readme files. They tend to be bloated, we would much rather read documentation where the content is created by you 🫵 (do not stress with spelling mistakes too much, they just make the content look genuine).
 
 Good luck! 🙂  If you have any questions, do not hesitate to contact us.
 
