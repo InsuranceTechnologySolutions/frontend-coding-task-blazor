@@ -12,7 +12,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<IFleetsClient, FleetsClient>(client =>
 {
-    client.BaseAddress = new("https://esa.instech.no", UriKind.Absolute);
+    client.BaseAddress = new(builder.Configuration.GetValue<string>("ApiUrl")!, UriKind.Absolute);
 });
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
