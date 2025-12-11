@@ -6,44 +6,22 @@ One common problem in shipping is to fill an anchorage efficiently with as many 
 ## Prerequisites
 
 - Your favourite IDE to code C# / Blazor 😀
-    - .net 9 SDK installed
+    - .net 10 SDK installed
 - github account, we want you to publish your code to a public repository which you share with us. 
 
 ## The Task
 
-Create a Blazor WASM or Server app which connects to the api at URL: [https://esa.instech.no/](https://esa.instech.no/). Please note that the documentation page for this API contains a link to a separate readme which is not relevant for this Blazor FE task. 
-
-A request like this:
-```sh
-$ curl -X GET https://esa.instech.no/api/fleets/random
-```
-.. can produce a JSON response with data similar to this:
-```json
-{
-  "anchorageSize": {
-    "width": 12,
-    "height": 15
-  },
-  "fleets": [
-    {
-      "singleShipDimensions": { "width": 6, "height": 5 },
-      "shipDesignation": "LNG Unit",
-      "shipCount": 2
-    },
-    {
-      "singleShipDimensions": { "width": 3, "height": 12 },
-      "shipDesignation": "Science & Engineering Ship",
-      "shipCount": 5
-    }
-  ]
-}
-```
+In the `AnchorageFiller` directory of this repository, we have provided a basic Blazor App you can extend to solve this task.
+The AnchorageFiller solution consists of the following projects:
+* `AnchorageFiller.Clients` - Strongly typed client that can be used to fetch a response from our API.
+* `AnchorageFiller.Server` - AspNetCore server used to host the WebAssembly app and to proxy requests to our API.
+* `AnchorageFiller.Web` - Blazor WebAssembly app.
 
 ### Suggested UI:
 
 <img src="images/Wireframes_3.png" alt="Wireframes" width="600" />
 
-The json states that there are 2 vessels with size (6x5) and 5 vessels with size (3X12). These can be dragged (and dropped) into the anchorage area. 
+The API response states that there are 2 vessels with size (6x5) and 5 vessels with size (3X12). These can be dragged (and dropped) into the anchorage area. 
 
 <img src="images/Wireframes_1.png" alt="Wireframes" width="600" />
 
@@ -54,20 +32,20 @@ The json states that there are 2 vessels with size (6x5) and 5 vessels with size
 You are done. 🥳 Clicking the "Try again!" button issues a new request to the API. Based on the response, render a new anchorage and the vessels / items to fill it with. 
 
 ### Additional information:
-- It could be that the vessels must be possible to rotate 90 degrees to utilize all space in the anchorage. You decide how to do this from a UX perspective (double clicking the vessel maybe?). If this is not possible, leave it. 
+- It could be that the vessels must be possible to rotate 90 degrees to utilize all space in the anchorage. You decide how to do this from a UX perspective. If this is not possible, leave it.
 - Overlap between vessels is not possible 💥 
-- It is ok if the full anchorage cannot be filled, but then you need to provide means to try again, perhaps always show that button? 
+- Our API does not guarantee anchorages that can be filled. There may be too many vessels in the response. Then you need to provide means to try again, perhaps always show that button? 
 - The state of the anchorage does not have to be persisted, page reload will be a new try. 
-- Any security concerns are out of scope (auth/CORS ++). 
+- Any security concerns are out of scope (auth ++). 
 - You can use third party libraries / components. 
 
 ## What will we evaluate?
 - Apart from a functional SPA, we want you create a codebase which is "clean" (adhere to the SOLID principles). 
+- We value clean code, accessibility, project structure and usability over having lots of functionality. Consider this if you have limited time.
 - Are there any parts which can be unit tested? 
-  - The UI components are probably not easy to test, but do you have any services, e.g. BinPackService which can be tested with mock dependencies? 
 - How do you do state management?
-- Apply CSS/Bootstraping to make the SPA look a bit nicer than the wireframes. 
-- Documentation - either in code or in a separate readme is highly appreciated. 
+- Apply CSS/Bootstraping to make the SPA look a bit nicer than the wireframes.
+- Documentation - either in code or in a separate readme is highly appreciated.
 - We do not like AI/Agent generated readme files. They tend to be bloated, we would much rather read documentation where the content is created by you 🫵 (do not stress with spelling mistakes too much, they just make the content look genuine).
 
 Good luck! 🙂  If you have any questions, do not hesitate to contact us.
