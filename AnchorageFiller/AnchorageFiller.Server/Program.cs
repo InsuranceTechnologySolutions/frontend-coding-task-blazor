@@ -1,10 +1,24 @@
+using AnchorageFiller.Clients;
 using AnchorageFiller.Server.Components;
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
+
+
+builder.Services
+    .AddHttpClient<IFleetsClient, FleetsClient>(client =>
+    {
+        client.BaseAddress = new("https://esa.instech.no", UriKind.Absolute);
+    });
+builder.Services.ConfigureHttpJsonOptions(options =>
+{
+    options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+});
 
 var app = builder.Build();
 
@@ -28,5 +42,8 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(AnchorageFiller.Client._Imports).Assembly);
+
+// API Endpoints
+app.MapGet("/api/fleets/random", ([FromServices] IFleetsClient client) => client.GetRandomFleetAsync());
 
 app.Run();
