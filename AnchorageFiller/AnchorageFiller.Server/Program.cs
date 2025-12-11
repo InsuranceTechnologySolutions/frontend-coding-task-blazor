@@ -41,7 +41,7 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(AnchorageFiller.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(AnchorageFiller.Web._Imports).Assembly);
 
 // API Endpoints
 app.MapGet("/api/fleets/random", ([FromServices] IFleetsClient client) => client.GetRandomFleetAsync());

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AnchorageFiller.Client\AnchorageFiller.Client.csproj" />
+    <ProjectReference Include="..\AnchorageFiller.Web\AnchorageFiller.Web.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.0.1" />
   </ItemGroup>
 

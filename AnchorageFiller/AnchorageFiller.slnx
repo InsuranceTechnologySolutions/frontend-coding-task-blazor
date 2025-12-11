@@ -4,7 +4,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="AnchorageFiller.Client/AnchorageFiller.Client.csproj" />
+  <Project Path="AnchorageFiller.Web/AnchorageFiller.Web.csproj" />
   <Project Path="AnchorageFiller.Clients/AnchorageFiller.Clients.csproj" Id="f463c6d2-1bcd-43f5-bb98-58cd169258f4" />
   <Project Path="AnchorageFiller.Server/AnchorageFiller.Server.csproj" />
 </Solution>
