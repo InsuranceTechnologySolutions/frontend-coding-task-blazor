@@ -10,7 +10,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AnchorageFiller.Client\AnchorageFiller.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.0.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
   </ItemGroup>
 
 </Project>

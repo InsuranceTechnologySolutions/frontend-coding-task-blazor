@@ -4,5 +4,5 @@ namespace AnchorageFiller.Clients;
 
 public interface IFleetsClient
 {
-    Task<GetFleetResponse> GetRandomFleetAsync(CancellationToken cancellationToken = default);
+    Task<GetFleetResponse?> GetRandomFleetAsync(CancellationToken cancellationToken = default);
 }

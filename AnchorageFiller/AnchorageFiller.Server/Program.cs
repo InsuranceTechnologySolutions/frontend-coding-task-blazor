@@ -46,4 +46,4 @@ app.MapRazorComponents<App>()
 // API Endpoints
 app.MapGet("/api/fleets/random", ([FromServices] IFleetsClient client) => client.GetRandomFleetAsync());
 
-app.Run();
+await app.RunAsync();
