@@ -5,5 +5,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="AnchorageFiller.Client/AnchorageFiller.Client.csproj" />
-  <Project Path="AnchorageFiller/AnchorageFiller.csproj" />
+  <Project Path="AnchorageFiller.Server/AnchorageFiller.Server.csproj" />
 </Solution>
