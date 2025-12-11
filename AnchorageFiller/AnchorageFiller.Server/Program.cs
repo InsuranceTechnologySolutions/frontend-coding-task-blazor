@@ -10,11 +10,10 @@ builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
 
-builder.Services
-    .AddHttpClient<IFleetsClient, FleetsClient>(client =>
-    {
-        client.BaseAddress = new("https://esa.instech.no", UriKind.Absolute);
-    });
+builder.Services.AddHttpClient<IFleetsClient, FleetsClient>(client =>
+{
+    client.BaseAddress = new("https://esa.instech.no", UriKind.Absolute);
+});
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
     options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
