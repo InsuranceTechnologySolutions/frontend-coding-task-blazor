@@ -1,5 +1,14 @@
 # Frontend Coding Task
 
+## Read this first!
+This repository is a template repository for our technical interview, so create your own project using this guide:
+
+[GitHub - Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
+An alternative is to download the code and create a new repository using a different VCS provider (gitlab / Azure repos). **Do not fork this repository.**
+
+When you have completed the tasks, please share the repository link with us. We will review your submission before the interview.
+
 ## Backstory
 One common problem in shipping is to fill an anchorage efficiently with as many vessels as possible. You will create a **Single Page Application** to manually solve this problem (*). The vessels should be placed in the anchorage using **drag and drop**. You will have access to an API which tells you what size the bin is (anchorage) and what items (vessels) to fill in. 
 
